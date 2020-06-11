@@ -1,0 +1,2 @@
+- improve npm publish workflow
+- add workflow to create release on PR to master
