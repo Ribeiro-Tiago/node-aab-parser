@@ -2,9 +2,10 @@
   "name": "node-aab-parser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "nodemon src/index.ts"
+    "start": "nodemon src/index.ts",
+    "build": "rm -rf lib && tsc"
   },
   "dependencies": {
     "bundletool": "^1.0.3",
@@ -13,7 +14,20 @@
   },
   "devDependencies": {
     "@types/node": "^14.0.13",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.5"
+  },
+  "author": {
+    "email": "tiagoribeiro.1803@gmail.com",
+    "name": "Tiago Ribeiro",
+    "url": "https://tiago-ribeiro.com"
   },
   "license": "GNU AGPLv3",
+  "keywords": [
+    "aab",
+    "parsing",
+    "parser",
+    "apk",
+    "android"
+  ]
 }
