@@ -15,7 +15,5 @@
     "@types/node": "^14.0.13",
     "nodemon": "^2.0.4"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "GNU AGPLv3",
 }
