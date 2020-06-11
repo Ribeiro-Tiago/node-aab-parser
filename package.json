@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon src/index.ts"
+  },
+  "dependencies": {
+    "bundletool": "^1.0.3",
+    "fast-xml-parser": "^3.17.4",
+    "node-apk-parser": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "nodemon": "^2.0.4"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
