@@ -1,15 +1,15 @@
-import bundletool from 'bundletool';
-import { parse as xmlParser } from 'fast-xml-parser';
+import bundletool from "bundletool";
+import { parse as xmlParser } from "fast-xml-parser";
 
-import { validateInput } from './validation';
-import { PermissionItem } from './types';
+import { validateInput } from "./validation";
+import { PermissionItem } from "./types";
 
-export default async (inputFile: string) => {
+export const readManifest = async (inputFile: string) => {
   validateInput(inputFile);
 
-  const { error, output } = await bundletool('dump', [
-    'manifest',
-    '--bundle',
+  const { error, output } = await bundletool("dump", [
+    "manifest",
+    "--bundle",
     inputFile,
   ]);
 
@@ -17,7 +17,7 @@ export default async (inputFile: string) => {
     throw error;
   }
 
-  const parsed = xmlParser(output.toString().replace(/,/gm, ''), {
+  const parsed = xmlParser(output.toString().replace(/,/gm, ""), {
     allowBooleanAttributes: true,
     parseTrueNumberOnly: false,
     parseAttributeValue: true,
@@ -28,19 +28,19 @@ export default async (inputFile: string) => {
   });
 
   const manifest = parsed.manifest[0];
-  const usesSdk = manifest['uses-sdk'][0];
-  const permisions = manifest['uses-permission'];
+  const usesSdk = manifest["uses-sdk"][0];
+  const permisions = manifest["uses-permission"];
 
   return {
-    compiledSdkVersion: manifest['@_android:compileSdkVersion'],
-    compiledSdkVersionCodename: manifest['@_android:compileSdkVersionCodename'],
-    minSdkVersion: usesSdk['@_android:minSdkVersion'],
-    targetSdkVersion: usesSdk['@_android:targetSdkVersion'],
-    versionCode: manifest['@_android:versionCode'],
-    verionName: manifest['@_android:versionName'],
-    packageName: manifest['@_package'],
+    compiledSdkVersion: manifest["@_android:compileSdkVersion"],
+    compiledSdkVersionCodename: manifest["@_android:compileSdkVersionCodename"],
+    minSdkVersion: usesSdk["@_android:minSdkVersion"],
+    targetSdkVersion: usesSdk["@_android:targetSdkVersion"],
+    versionCode: manifest["@_android:versionCode"],
+    verionName: String(manifest["@_android:versionName"]),
+    packageName: manifest["@_package"],
     permissions: permisions.map(
-      (item: PermissionItem) => item['@_android:name']
+      (item: PermissionItem) => item["@_android:name"],
     ),
   };
 };
