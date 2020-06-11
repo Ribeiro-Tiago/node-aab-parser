@@ -1,0 +1,8 @@
+node_modules/
+CHANGELOG
+TODO.md
+yarn.lock
+*.log
+.github/
+.prettierrc
+tsconfig.json
