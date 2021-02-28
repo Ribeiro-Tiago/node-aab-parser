@@ -1,6 +1,6 @@
 # node-aab-parser
 
-A parser for aaba manifest's, inspired by [node-apk-parser](https://www.npmjs.com/package/node-apk-parser)
+A parser for aab manifests, inspired by [node-apk-parser](https://www.npmjs.com/package/node-apk-parser)
 
 ### Requirements
 
