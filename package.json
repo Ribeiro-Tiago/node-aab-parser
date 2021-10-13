@@ -22,7 +22,7 @@
     "name": "Tiago Ribeiro",
     "url": "https://tiago-ribeiro.com"
   },
-  "license": "GNU AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "keywords": [
     "aab",
     "parsing",
