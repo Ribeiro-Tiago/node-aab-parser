@@ -113,12 +113,13 @@ braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-bundletool@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/bundletool/-/bundletool-1.1.4.tgz#f38fba340043bf7e7d9e550735d63f65464e1491"
-  integrity sha512-NS0zkkiRAp3Cd5Jfso100EnZDrnfT3H5IBn4fYpUfr9EDFMdwEWQ8J6lOMlhtsaMujEkQGaV3l6puMeDkGIfvg==
+bundletool@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/bundletool/-/bundletool-1.1.7.tgz#81da5dc5c450762213b6f55661106bcdce2fa906"
+  integrity sha512-/5IQ/BXFTXzu2LjqHrUaW6m3y1mJsArcpEdWArc5uD20N/BQphqN7iRb0dMJHXmnON3toByfpnZlYDL30YZj/A==
   dependencies:
     axios "^0.21.1"
+    command-exists "^1.2.9"
     mkdirp "^1.0.4"
 
 cacheable-request@^6.0.0:
@@ -190,6 +191,11 @@ color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+command-exists@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
+  integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
 concat-map@0.0.1:
   version "0.0.1"

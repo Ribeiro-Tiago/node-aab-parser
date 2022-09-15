@@ -9,7 +9,7 @@
     "build": "rm -rf lib && tsc"
   },
   "dependencies": {
-    "bundletool": "^1.1.4",
+    "bundletool": "^1.1.7",
     "fast-xml-parser": "^3.17.4",
     "node-apk-parser": "^0.2.3"
   },
