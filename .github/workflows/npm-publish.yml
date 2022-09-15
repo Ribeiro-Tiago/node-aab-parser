@@ -6,7 +6,7 @@ on:
       reason:
         description: "Why triggering it manually"
         required: false
-        default: "need to trigger publish workflow but don't want to create a new release"
+        default: "Need to trigger publish workflow but don't want to create a new release"
   release:
     types: [created]
 
@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish
+      - run: yarn install
+      - run: yarn build
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
