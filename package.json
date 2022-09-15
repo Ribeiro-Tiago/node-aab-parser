@@ -1,7 +1,7 @@
 {
   "name": "node-aab-parser",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "A parser to get manifests of .aab files",
   "repository": "github:Ribeiro-Tiago/node-aab-parser",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,12 @@
     "name": "Tiago Ribeiro",
     "url": "https://tiago-ribeiro.com"
   },
+  "contributors": [
+    {
+      "name": "Christian Zommerfelds",
+      "url": "https://github.com/zommerfelds"
+    }
+  ],
   "license": "AGPL-3.0-or-later",
   "keywords": [
     "aab",
