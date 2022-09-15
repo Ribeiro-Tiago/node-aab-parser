@@ -2,6 +2,7 @@
   "name": "node-aab-parser",
   "version": "1.0.2",
   "description": "",
+  "repository": "github:Ribeiro-Tiago/node-aab-parser",
   "main": "lib/index.js",
   "scripts": {
     "start": "nodemon src/index.ts",
